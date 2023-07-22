@@ -1,3 +1,4 @@
-a {
-    align-items: center;
+.centered {
+    text-align: center;
+    color: olive;
 }
