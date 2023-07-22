@@ -1,0 +1,8 @@
+img {
+    width: 20%; /* takes the 100 % width of its container (.box div)*/
+    height: 20%; /* takes the 100 % height of its container (.box div)*/
+}
+
+a {
+  text-align: center;
+}
