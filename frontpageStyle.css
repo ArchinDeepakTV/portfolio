@@ -16,9 +16,9 @@ html {
     font-size: smaller;
     font-weight: bold;
 }
- 
+
 #demo-bg {
-    opacity: 0.6;
+    /* opacity: 0.6; */
     position: absolute;
     left: 0;
     top: 0;
@@ -26,7 +26,7 @@ html {
     height: 100%;
 }
 
-.sub-heading {
+.box h3 {
     text-align: center;
     color: royalblue;
     font-size: 3rem;
