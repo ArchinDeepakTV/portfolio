@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcs.css" />
+    <script></script>
+  </head>
+  <body>
+    <h1
+      style="
+        text-align: center;
+        text-transform: uppercase;
+        border: 3px inset mediumseagreen;
+      "
+    >
+      Calculator
+    </h1>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+    <form action="/url" method="get">
+      <input
+        style="
+          text-align: center;
+          display: block;
+          margin-left: 30%;
+          margin-top: 2%;
+          height: 8vh;
+          width: 40%;
+        "
+        type="text"
+        placeholder="enter here"
+      />
+      <button style="margin-left: 46%; margin-top: 2%" type="submit">
+        Submit
+      </button>
+      <output
+        id="outCal"
+        style="
+          display: block;
+          text-align: center;
+          margin-top: 10%;
+          border: 3px inset white;
+        "
+        >results</output
+      >
+    </form>
+  </body>
+</html>
