@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function a() {
+        var e = document.getElementById("storage");
+        e.innerHTML += "<p style='font-size:120%'>The time has come!</b></p>";
+      }
+
+      function term() {
+        var now = new Date();
+        var hours = document.getElementById("hours").value;
+        var minutes = document.getElementById("minutes").value;
+        var seconds = document.getElementById("seconds").value;
+        var term = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate(),
+          hours,
+          minutes,
+          seconds,
+          0
+        );
+        setTimeout(a, term - now);
+        var e = document.getElementById("storage");
+        var diff = Math.round((term.getTime() - now.getTime()) / 1000);
+        e.innerHTML += "<p><p>Will occur in " + diff + " seconds...</b></p>";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="hours" value="18" size="4" />
+    <input type="text" id="minutes" value="23" size="4" />
+    <input type="text" id="seconds" value="11" size="4" />
+    <fieldset id="storage">
+      <legend>Events will come here...</legend>
+    </fieldset>
+  </body>
+</html>
