@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="calcs.css" />
-    <script></script>
+    <script src="calc.js"></script>
   </head>
   <body>
     <h1
@@ -18,11 +18,12 @@
       Calculator
     </h1>
     <label class="switch">
-      <input type="checkbox" />
+      <input type="checkbox" id="myCheck" onclick="myFunction()" />
       <span class="slider round"></span>
     </label>
     <form action="/url" method="get">
       <input
+        id="inQuery"
         style="
           text-align: center;
           display: block;
@@ -33,20 +34,22 @@
         "
         type="text"
         placeholder="enter here"
+        onkeyup="queryFunction()"
+        autofocus
       />
-      <button style="margin-left: 46%; margin-top: 2%" type="submit">
+      <!-- <button style="margin-left: 46%; margin-top: 2%" type="submit">
         Submit
-      </button>
-      <output
-        id="outCal"
-        style="
-          display: block;
-          text-align: center;
-          margin-top: 10%;
-          border: 3px inset white;
-        "
-        >results</output
-      >
+      </button> -->
     </form>
+    <p
+      id="outCal"
+      style="
+        display: none;
+        text-align: center;
+        margin-top: 10%;
+        border: 3px inset white;
+      "
+    ></p>
+    <p id="text" style="display: none">Checkbox is CHECKED!</p>
   </body>
 </html>
