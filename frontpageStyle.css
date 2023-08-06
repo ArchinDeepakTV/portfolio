@@ -7,6 +7,30 @@ html {
     font-weight: bold;
 }
 
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: cornflowerblue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 #demo-bg {
     /* opacity: 0.6; */
     position: absolute;
@@ -19,7 +43,7 @@ html {
 #main-heading {
     display: block;
     /* background-color: aqua; */
-    border: 10px inset aquamarine;
+    /* border: 10px inset aquamarine; */
     height: 13vh;
     width: 90%;
     margin-left: 5%;
@@ -31,11 +55,11 @@ html {
     opacity: 0.9;
 }
 
-.box h3 {
+.project {
     display: inline-block;
     height: 8vh;
     /* background-color: violet; */
-    border:  5px inset purple;
+    /* border:  5px inset purple; */
     margin-left: 5%;
     margin-top: 2%;
     width: 90%;
@@ -46,27 +70,40 @@ html {
     /* font-family: 'Kaushan Script', cursive; */
     opacity: 0.9;
 }
-
-.projects {
-    display: block;
-    text-transform: uppercase;
+.container{
+    display: flex;
     text-align: center;
-    font-weight: bolder;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 2.5rem;
-    margin-top: 3%;
-    border: 3px inset palevioletred;
-    opacity: 0.9;
+    /* gap: 5rem; */
+    justify-content: space-between;
 }
 
-.bottom-note {
-    display: inline-block;
-    /* color: green; */
-    height: 5vh;
-    width: 45%;
-    font-size: 2rem;
-    /* background-color: chartreuse; */
+img {
+    width: 50%; /* takes the 100 % width of its container (.box div)*/
+    height: auto; /* takes the 100 % height of its container (.box div)*/
+}
 
+.container div{
+    padding: 2rem;
+    height: 30vh;
+    width: 50%;
+    margin: 1rem;
+    border: 2px solid black;
+    font-size: x-large;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.footer-container {
+    color: white;
+    border: 5px solid aquamarine;
+    display: flex;
     text-align: center;
-    opacity: 0.9;
+    clear: both;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+a h3 {
+    /* background-color: violet; */
+    font-family: 'Kalam', cursive;
+    font-size: larger;
 }
