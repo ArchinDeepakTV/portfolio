@@ -1,9 +1,26 @@
 import "./App.css";
+import {
+  BrowserRouter,
+  Navigate,
+  Routes,
+  Route,
+  // useParams,
+} from "react-router-dom";
+import Landing from "./components/Landing";
+import Resume from "./components/Resume";
 
 function App() {
+  // sessionStorage.setItem("nodeBackendURL", "http://localhost:5050"); // TODO: will need later for backend
+
   return (
     <>
-      <h1>Working on it</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
